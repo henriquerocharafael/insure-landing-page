@@ -7,6 +7,10 @@ export const StyledHeader = styled.header`
   align-items: center;
   font-weight: 700;
 
+  .hamburger {
+    display: none;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -25,6 +29,19 @@ export const StyledHeader = styled.header`
           color: var(--dark-violet);
         }
       }
+    }
+  }
+
+  @media (max-width: 575px) {
+    height: 5rem;
+    padding: 0 1.5rem;
+
+    .hamburger {
+      display: initial;
+    }
+
+    nav {
+      display: none;
     }
   }
 `;

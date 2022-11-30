@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Wrapper } from "./styles/Container";
+import { BgImgIntroLeft, BgImgIntroRight, Wrapper } from "./styles/Container";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { IntroSection } from "./components/IntroSection";
 import { IntroSectionContent } from "./components/IntroSectionContent";
@@ -10,9 +10,11 @@ import { Footer } from "./components/Footer";
 export function App() {
   return (
     <>
+      <BgImgIntroLeft src="./src/assets/bg-pattern-intro-left-desktop.svg" />
+      <BgImgIntroRight src="./src/assets/bg-pattern-intro-right-desktop.svg" />
+
       <Wrapper>
         <Header />
-        <GlobalStyles />
       </Wrapper>
 
       <IntroSection>
@@ -28,6 +30,7 @@ export function App() {
       </MainSection>
 
       <Footer />
+      <GlobalStyles />
     </>
   );
 }

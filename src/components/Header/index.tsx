@@ -6,6 +6,8 @@ export const Header: React.FC = () => {
     <StyledHeader>
       <img src="../src/assets/logo.svg" alt="Logo Insure" />
 
+      <img src="../src/assets/icon-hamburger.svg" className="hamburger" />
+
       <nav>
         <div>
           <a href="#">how we work</a>

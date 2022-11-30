@@ -34,6 +34,7 @@ export const MainSectionContent: React.FC = () => {
       </div>
 
       <div className="about-container">
+        <img src="../src/assets/bg-pattern-how-we-work-desktop.svg" />
         <h1>Find out more about how we work</h1>
         <Button
           href="#"

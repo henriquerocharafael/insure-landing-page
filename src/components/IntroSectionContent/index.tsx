@@ -1,10 +1,13 @@
 import { Button } from "../Button";
-import { StyledIntro } from "./styles";
+import { ColA, Colb, StyledIntro } from "./styles";
+
+const DeskTopImg = "../src/assets/image-intro-desktop.jpg";
+const MobileImg = "../src/assets/image-intro-mobile.jpg";
 
 export const IntroSectionContent: React.FC = () => {
   return (
     <StyledIntro>
-      <div>
+      <ColA>
         <hr />
         <h1>Humanizing your insurance.</h1>
         <p>
@@ -21,10 +24,11 @@ export const IntroSectionContent: React.FC = () => {
         >
           view plans
         </Button>
-      </div>
-      <div>
-        <img src="../src/assets/image-intro-desktop.jpg" alt="Happy Family Image" />
-      </div>
+      </ColA>
+      <Colb>
+        <img className="desktopImg" src={DeskTopImg} alt="Happy Family Image" />
+        <img className="mobileImg" src={MobileImg} alt="Happy Family Image" />
+      </Colb>
     </StyledIntro>
   );
 };

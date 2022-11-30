@@ -20,7 +20,9 @@ export const GlobalStyles = createGlobalStyle`
     background: var(--very-light-gray);
     font-family: 'Karla', sans-serif;
     height: 100vh;
+    width: 100%;
     --webkit-font-smoothing: antialiased;
+    position: relative;
   }
 
   h1 {

@@ -18,11 +18,11 @@ export const StyledMainContent = styled.main`
   }
 
   .card-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 5rem 0 8rem 0;
+    justify-content: center;
 
     h3 {
       font-family: "DM Serif Display", sans-serif;
@@ -45,7 +45,15 @@ export const StyledMainContent = styled.main`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 4rem;
+    padding: 4rem;
+    position: relative;
+    z-index: 2;
+
+    img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
 
     h1 {
       color: var(--very-light-gray);
@@ -53,6 +61,37 @@ export const StyledMainContent = styled.main`
       font-size: 3rem;
       width: 26.1rem;
       margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    hr {
+      margin: 0 auto 4rem auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      gap: 4rem;
+    }
+
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 3rem;
+
+      img {
+        display: none;
+      }
+
+      h1 {
+        width: auto;
+      }
     }
   }
 `;
