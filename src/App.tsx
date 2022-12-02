@@ -7,11 +7,14 @@ import { MainSection } from "./components/MainSection";
 import { MainSectionContent } from "./components/MainSectionContent";
 import { Footer } from "./components/Footer";
 
+import bgImgIntroLeft from "./assets/bg-pattern-intro-left-desktop.svg";
+import bgImgIntroRight from "./assets/bg-pattern-intro-right-desktop.svg";
+
 export function App() {
   return (
     <>
-      <BgImgIntroLeft src="./src/assets/bg-pattern-intro-left-desktop.svg" />
-      <BgImgIntroRight src="./src/assets/bg-pattern-intro-right-desktop.svg" />
+      <BgImgIntroLeft src={bgImgIntroLeft} />
+      <BgImgIntroRight src={bgImgIntroRight} />
 
       <Wrapper>
         <Header />

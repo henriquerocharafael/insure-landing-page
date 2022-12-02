@@ -1,6 +1,8 @@
 import { Button } from "../Button";
 import { StyledMainContent } from "./styles";
 
+import bgPattern from "../../assets/bg-pattern-how-we-work-desktop.svg";
+
 export const MainSectionContent: React.FC = () => {
   return (
     <StyledMainContent>
@@ -34,7 +36,7 @@ export const MainSectionContent: React.FC = () => {
       </div>
 
       <div className="about-container">
-        <img src="../src/assets/bg-pattern-how-we-work-desktop.svg" />
+        <img src={bgPattern} />
         <h1>Find out more about how we work</h1>
         <Button
           href="#"

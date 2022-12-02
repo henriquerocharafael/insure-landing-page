@@ -1,8 +1,8 @@
 import { Button } from "../Button";
 import { ColA, Colb, StyledIntro } from "./styles";
 
-const DeskTopImg = "../src/assets/image-intro-desktop.jpg";
-const MobileImg = "../src/assets/image-intro-mobile.jpg";
+import desktopImg from "../../assets/image-intro-desktop.jpg";
+import mobileImg from "../../assets/image-intro-mobile.jpg";
 
 export const IntroSectionContent: React.FC = () => {
   return (
@@ -26,8 +26,8 @@ export const IntroSectionContent: React.FC = () => {
         </Button>
       </ColA>
       <Colb>
-        <img className="desktopImg" src={DeskTopImg} alt="Happy Family Image" />
-        <img className="mobileImg" src={MobileImg} alt="Happy Family Image" />
+        <img className="desktopImg" src={desktopImg} alt="Happy Family Image" />
+        <img className="mobileImg" src={mobileImg} alt="Happy Family Image" />
       </Colb>
     </StyledIntro>
   );
