@@ -1,12 +1,15 @@
 import { StyledHeader } from "./styles";
 import { Button } from "../Button";
 
+import logo from "../../assets/logo.svg";
+import hamburger from "../../assets/icon-hamburger.svg";
+
 export const Header: React.FC = () => {
   return (
     <StyledHeader>
-      <img src="../src/assets/logo.svg" alt="Logo Insure" />
+      <img src={logo} alt="Logo Insure" />
 
-      <img src="../src/assets/icon-hamburger.svg" className="hamburger" />
+      <img src={hamburger} className="hamburger" />
 
       <nav>
         <div>
