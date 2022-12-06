@@ -18,6 +18,8 @@ export const StyledFooter = styled.footer`
   }
 
   @media (max-width: 575px) {
+    padding: 6rem 0;
+
     .bg-image {
       display: none;
     }

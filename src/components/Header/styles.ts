@@ -34,7 +34,7 @@ export const StyledHeader = styled.header`
 
   @media (max-width: 575px) {
     height: 5rem;
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
 
     .hamburger {
       display: initial;

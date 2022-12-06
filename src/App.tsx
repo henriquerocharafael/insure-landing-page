@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 
 import bgImgIntroLeft from "./assets/bg-pattern-intro-left-desktop.svg";
 import bgImgIntroRight from "./assets/bg-pattern-intro-right-desktop.svg";
+import mobileImg from "./assets/image-intro-mobile.jpg";
 
 export function App() {
   return (
@@ -19,6 +20,7 @@ export function App() {
       <Wrapper>
         <Header />
       </Wrapper>
+      <img className="mobileImg" src={mobileImg} alt="Happy Family Image" />
 
       <IntroSection>
         <Wrapper>

@@ -65,12 +65,15 @@ export const StyledMainContent = styled.main`
   }
 
   @media (max-width: 575px) {
+    margin: 11rem 0 9rem 0;
+
     hr {
       margin: 0 auto 4rem auto;
     }
 
     h1 {
       text-align: center;
+      font-size: 2.8rem;
     }
 
     .card-container {
@@ -84,6 +87,7 @@ export const StyledMainContent = styled.main`
       text-align: center;
       align-items: center;
       gap: 3rem;
+      padding: 4rem 2rem;
 
       img {
         display: none;
@@ -91,6 +95,8 @@ export const StyledMainContent = styled.main`
 
       h1 {
         width: auto;
+        font-size: 2.8rem;
+        line-height: 2.7rem;
       }
     }
   }

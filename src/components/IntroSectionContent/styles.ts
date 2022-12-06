@@ -52,6 +52,10 @@ export const ColA = styled.div`
 
   @media (max-width: 575px) {
     text-align: center;
+
+    h1 {
+      font-size: 2.8rem;
+    }
   }
 `;
 
@@ -64,18 +68,9 @@ export const Colb = styled.div`
     width: 100%;
   }
 
-  .mobileImg {
-    display: none;
-  }
-
   @media (max-width: 575px) {
     .desktopImg {
       display: none;
-    }
-
-    .mobileImg {
-      display: block;
-      width: 100%;
     }
   }
 `;

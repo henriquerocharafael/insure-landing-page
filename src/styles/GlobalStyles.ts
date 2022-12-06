@@ -34,4 +34,15 @@ export const GlobalStyles = createGlobalStyle`
     text-transform: uppercase;
     font-weight: 700;
   }
+
+  .mobileImg {
+    display: none;
+  }
+
+  @media (max-width: 575px) {
+    .mobileImg {
+      display: block;
+      width: 100%;
+    }
+  }
 `;
