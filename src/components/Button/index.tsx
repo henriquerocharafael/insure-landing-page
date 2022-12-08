@@ -9,6 +9,7 @@ interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   color: string;
   border: string;
   textColor: string;
+  width?: string;
 }
 
 export const Button: React.FC<ButtonProps> = (props) => {
@@ -19,6 +20,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
       border={props.border}
       textColor={props.textColor}
       href={props.href}
+      width={props.width}
     >
       {props.children}
     </StyledBtn>

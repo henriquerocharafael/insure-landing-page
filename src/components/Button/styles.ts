@@ -5,6 +5,7 @@ type PropType = {
   color: string;
   border: string;
   textColor: string;
+  width?: string;
 };
 
 export const StyledBtn = styled.a<PropType>`
@@ -13,6 +14,8 @@ export const StyledBtn = styled.a<PropType>`
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   transition: all 0.5s;
+  width: ${(props) => props.width};
+  text-align: center;
 
   &:hover {
     background: ${(props) => props.bg};
