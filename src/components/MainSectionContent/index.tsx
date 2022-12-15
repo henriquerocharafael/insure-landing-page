@@ -4,7 +4,7 @@ import { StyledMainContent } from "./styles";
 import iconSnappyProcess from "../../assets/icon-snappy-process.svg";
 import iconAffordablePrices from "../../assets/icon-affordable-prices.svg";
 import iconPeopleFirst from "../../assets/icon-people-first.svg";
-import bgPattern from "../../assets/bg-pattern-how-we-work-desktop.svg";
+import bgPatternDesktop from "../../assets/bg-pattern-how-we-work-desktop.svg";
 
 export const MainSectionContent: React.FC = () => {
   return (
@@ -39,7 +39,7 @@ export const MainSectionContent: React.FC = () => {
       </div>
 
       <div className="about-container">
-        <img src={bgPattern} />
+        <img className="bg-pattern-desktop" src={bgPatternDesktop} />
         <h1>Find out more about how we work</h1>
         <Button
           href="#"

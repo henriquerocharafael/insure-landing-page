@@ -49,7 +49,7 @@ export const StyledMainContent = styled.main`
     position: relative;
     z-index: 2;
 
-    img {
+    .bg-pattern-desktop {
       position: absolute;
       right: 0;
       z-index: -1;
@@ -89,7 +89,7 @@ export const StyledMainContent = styled.main`
       gap: 3rem;
       padding: 4rem 2rem;
 
-      img {
+      .bg-pattern-desktop {
         display: none;
       }
 

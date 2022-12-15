@@ -2,10 +2,14 @@ import { Button } from "../Button";
 import { ColA, Colb, StyledIntro } from "./styles";
 
 import desktopImg from "../../assets/image-intro-desktop.jpg";
+import patternLeft from "../../assets/bg-pattern-intro-left-mobile.svg";
+import patternRight from "../../assets/bg-pattern-intro-right-mobile.svg";
 
 export const IntroSectionContent: React.FC = () => {
   return (
     <StyledIntro>
+      <img className="pattern-left" src={patternLeft} />
+      <img className="pattern-right" src={patternRight} />
       <ColA>
         <hr />
         <h1>Humanizing your insurance.</h1>

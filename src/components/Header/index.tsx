@@ -3,6 +3,8 @@ import { Button } from "../Button";
 
 import logo from "../../assets/logo.svg";
 import hamburger from "../../assets/icon-hamburger.svg";
+import close from "../../assets/icon-close.svg";
+import bgPatterNav from "../../assets/bg-pattern-mobile-nav.svg";
 
 import { useState } from "react";
 
@@ -12,7 +14,7 @@ export const Header: React.FC = () => {
   function handleMenuState() {
     setMenuIsOpen(!menuIsOpen)
 
-    // this disables body scrool when mobile monu is open
+    // this disables body scrool when mobile menu is open
     if (document.body.style.overflow !== "hidden") {
       document.body.style.overflow = "hidden";
     } else {
@@ -24,7 +26,11 @@ export const Header: React.FC = () => {
     <StyledHeader>
       <img src={logo} alt="Logo Insure" />
 
-      <img onClick={handleMenuState} src={hamburger} className="hamburger" />
+      <img 
+        onClick={handleMenuState} 
+        src={menuIsOpen ? close : hamburger} 
+        className="hamburger" 
+      />
 
       <nav>
         <div>
@@ -62,6 +68,7 @@ export const Header: React.FC = () => {
             view plans
           </Button>
         </div>
+        <img src={bgPatterNav} />
       </div>
     </StyledHeader>
   );

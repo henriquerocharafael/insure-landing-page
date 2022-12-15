@@ -6,6 +6,17 @@ export const StyledIntro = styled.div`
   padding: 6rem 0 8rem 0;
   gap: 1.5rem;
 
+  .pattern-left {
+    position: absolute;
+    left: 0;
+  }
+
+  .pattern-right {
+    position: absolute;
+    right: 0;
+    top: 947px;
+  }
+
   @media (max-width: 575px) {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 0 8rem 0;

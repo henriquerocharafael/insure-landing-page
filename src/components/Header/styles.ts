@@ -72,6 +72,12 @@ export const StyledHeader = styled.header`
         color: var(--very-light-gray);
         font-size: 1.3rem;
       }
+
+      img {
+        position: absolute;
+        bottom: 82px;
+        width: 100%;
+      }
     }
 
     .open {
